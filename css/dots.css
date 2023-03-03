@@ -1,0 +1,97 @@
+/* DOT A */
+.dot-pulse {
+  display: flex;
+  align-items: center;
+}
+.dot-pulse span {
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dotsA;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dot-pulse span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.dot-pulse span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes dotsA {
+  50% {
+    opacity: 0;
+    transform: scale(0.4) translateY(5px);
+  }
+}
+
+/* DOT B */
+.dot-loading {
+  display: flex;
+  align-items: center;
+}
+.dot-loading span {
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dotsB;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dot-loading span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.dot-loading span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes dotsB {
+  50% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+}
+
+/* DOT C */
+.dot-basic {
+  display: flex;
+  align-items: center;
+}
+.dot-basic span {
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dotsC;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dot-basic span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.dot-basic span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes dotsC {
+  50% {
+    opacity: 0;
+  }
+}

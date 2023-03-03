@@ -1,0 +1,29 @@
+
+.swap-parent {
+  width: 100px;
+  height: 100px;
+}
+.swap {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+.swap-parent:hover .swap {
+  animation-name: turn-in-animation;
+  animation-duration: 1s;
+  background-color: blue
+}
+@keyframes turn-in-animation {
+  0%   {
+    background-color: orange;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50%  {
+    background-color: orange;
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  100% {
+    background-color: blue;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
